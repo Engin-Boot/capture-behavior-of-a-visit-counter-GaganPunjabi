@@ -8,6 +8,6 @@ Scenario: Show patient visits during working days and holidays
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given the Schedule of Specialists visiting the hospital is recorded.
+  Given Record the Schedule of Specialists visiting the hospital.
   When Vehicle enters the parking entry and asks for a patient token
   Then Assign tokens if the space is available.
