@@ -2,7 +2,8 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given Separate entry and exit point is present for staff and sensor is placed at the entry and exit point on visitor gate
+  Given Separate entry and exit point is present for staff 
+  AND sensor is placed at the entry and exit point on visitor gate
   When Visitor enters or exits the hospital through the visitor gate.
   Then Increment and decrement the count as per entry/ exit.
 
