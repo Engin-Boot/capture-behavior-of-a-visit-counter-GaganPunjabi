@@ -11,4 +11,4 @@ Scenario: Reconcile counts if the sensor is offline for a while
 
   Given A security guard is available.
   When Sensors are offline or non-functional
-  Then Request is sent to the security guard to make the entry manually
+  Then Send request to the security guard to make the entry manually
