@@ -3,11 +3,11 @@
 Scenario: Show patient visits during working days and holidays
 
   Given The computer system is running
-  When Patient asks for appointment at registration desk
+  When Patient asks for an appointment at the registration desk
   Then Increment the patient count on successful registration
 
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given Parking token is assigned to each vehical owner
-  When Vehical enters the parking entry and ask for token
-  Then Count number of tokens been assigned
+  Given the Schedule of Specialists visiting the hospital is recorded.
+  When Vehicle enters the parking entry and asks for a patient token
+  Then Assign tokens if the space is available.
