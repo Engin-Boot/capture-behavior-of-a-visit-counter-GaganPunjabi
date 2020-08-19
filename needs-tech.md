@@ -5,7 +5,8 @@ that runs the visit-counter
 
   Given Add all entries manually in personal computer
   When Server is not running.
-  Then Start Synchronization program to add all entries in a personal computer to the server
+  Then Start Synchronization program to add all entries in a personal computer
+  to the server
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
