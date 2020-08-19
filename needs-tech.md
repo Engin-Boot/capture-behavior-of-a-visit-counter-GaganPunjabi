@@ -3,9 +3,9 @@
 Scenario: Recover across restarts of the server
 that runs the visit-counter
 
-  Given Backup server is present
-  When Primary server is not accessible
-  Then Switch on the backup server and transfer the request to that server.
+  Given Add all entries manually in personal computer
+  When Server is not running.
+  Then Start Synchronization program to add all entries in a personal computer to the server
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
